@@ -1,0 +1,10 @@
+{
+    "name": "product/category",
+    "autoload": {
+        "psr-4": {
+            "Product\\Category\\": "src/"
+        }
+    },
+    "require": {},
+    "minimum-stability": "dev"
+}
