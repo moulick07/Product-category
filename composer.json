@@ -1,5 +1,5 @@
 {
-    "name": "product/category",
+    "name": "prod/category",
     "autoload": {
         "psr-4": {
             "Product\\Category\\": "src/"
