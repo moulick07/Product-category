@@ -5,6 +5,8 @@
             "Product\\Category\\": "src/"
         }
     },
-    "require": {},
+    "require": {
+        "prod/category": "dev-main"
+    },
     "minimum-stability": "dev"
 }
