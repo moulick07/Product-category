@@ -22,8 +22,12 @@ class ProductServiceProvider extends ServiceProvider
     public function boot(): void
     {
       
-        // $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-        // $this->loadViewsFrom(__DIR__.'/../views', 'inspire');
+        $this->publishes([
+            __DIR__.'/routes' => base_path('routes'),
+        ]);
+        $this->publishes([
+            __DIR__.'/views' => base_path('resources/views'),
+        ]);
         $this->publishes([
             __DIR__ . '/../database/migrations/' => database_path('migrations'),
         ], 'my-package-migrations');
